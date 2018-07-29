@@ -1,13 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>cn.org.kkl</groupId>
-    <artifactId>e3-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  <artifactId>e3-sso-web</artifactId>
-  <packaging>war</packaging>
-  <!-- dependent jar -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>cn.org.kkl</groupId>
+		<artifactId>e3-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>e3-sso-web</artifactId>
+	<packaging>war</packaging>
+	<!-- dependent jar -->
 	<dependencies>
 		<dependency>
 			<groupId>cn.org.kkl</groupId>
@@ -82,11 +84,6 @@
 			<artifactId>jsp-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		<!-- file upload configuration -->
-		<!-- <dependency>
-			<groupId>commons-fileupload</groupId>
-			<artifactId>commons-fileupload</artifactId>
-		</dependency> -->
 		<!-- junit test -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -94,9 +91,9 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<!-- plugins configuration -->
 	<build>
-		<!-- tomcat7 configuration -->
 		<plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>

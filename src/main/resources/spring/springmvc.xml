@@ -38,4 +38,7 @@
 	<dubbo:application name="e3-sso-web"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.25.133:2181"/>	
 	<!-- <dubbo:reference interface="cn.kkl.mall.service.ItemService" id="itemService" /> -->
+	<dubbo:reference interface="cn.kkl.mall.sso.service.RegisterService" id="registerService"></dubbo:reference>
+	<dubbo:reference interface="cn.kkl.mall.sso.service.LoginService" id="loginService"></dubbo:reference>
+	<dubbo:reference interface="cn.kkl.mall.sso.service.TokenService" id="tokenService"></dubbo:reference>
 </beans>
